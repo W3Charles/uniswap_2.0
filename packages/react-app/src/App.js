@@ -5,7 +5,11 @@ import styles from './styles';
 import { uniswapLogo } from './assets';
 
 const App = () => {
-  return <p>Hello, Web3!</p>
+  return (
+    <div className={styles.container}>
+
+    </div>
+  )
 }
 
 export default App;
