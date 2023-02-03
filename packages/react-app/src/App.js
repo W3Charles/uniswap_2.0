@@ -24,7 +24,9 @@ const App = () => {
           <div className={styles.exchangeBoxWrapper}>
             <div className={styles.exchangeBox}>
               <div className="pink_gradient" />
-              
+              <div className={styles.exchange}>
+                
+              </div>
               <div className="blue_gradient" />
             </div>
           </div>
