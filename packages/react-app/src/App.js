@@ -5,6 +5,8 @@ import styles from './styles';
 import { uniswapLogo } from './assets';
 
 const App = () => {
+  const { account } = useEthers();
+
   return (
     <div className={styles.container}>
       <div className={styles.innerContainer}>
@@ -25,7 +27,7 @@ const App = () => {
             <div className={styles.exchangeBox}>
               <div className="pink_gradient" />
               <div className={styles.exchange}>
-                
+
               </div>
               <div className="blue_gradient" />
             </div>
