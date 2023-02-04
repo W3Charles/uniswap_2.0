@@ -7,6 +7,8 @@ import { uniswapLogo } from './assets';
 const App = () => {
   const { account } = useEthers();
 
+  const poolsLoading = false;
+
   return (
     <div className={styles.container}>
       <div className={styles.innerContainer}>
@@ -27,6 +29,11 @@ const App = () => {
             <div className={styles.exchangeBox}>
               <div className="pink_gradient" />
               <div className={styles.exchange}>
+                {account ? (
+                  poolsLoading ? (
+                    <Loader />
+                  ) : <Exchange />
+                ) : <Loader />}
 
               </div>
               <div className="blue_gradient" />
