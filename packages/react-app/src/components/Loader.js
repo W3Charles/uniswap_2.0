@@ -9,7 +9,7 @@ const Loader = ({title}) => {
       <img
         src={ethereumLogo}
         alt="ethereum logo"
-        className={styles.loaderimg}
+        className={styles.loaderImg}
       />
     </div>
   )
