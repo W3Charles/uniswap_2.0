@@ -32,9 +32,9 @@ const App = () => {
               <div className={styles.exchange}>
                 {account ? (
                   poolsLoading ? (
-                    <Loader />
+                    <Loader title="Loading pools, please wait!" />
                   ) : <Exchange />
-                ) : <Loader />}
+                ) : <Loader title="Please connect your wallet" />}
 
               </div>
               <div className="blue_gradient" />
