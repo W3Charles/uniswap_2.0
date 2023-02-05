@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import {shortenAddress, useEthers, useLookupAddress} from "@usedapp/core";
 
+import styles from "../styles";
+
 const WalletButton = () => {
   return (
     <div>WalletButton</div>
