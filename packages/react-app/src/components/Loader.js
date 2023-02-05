@@ -11,6 +11,7 @@ const Loader = ({title}) => {
         alt="ethereum logo"
         className={styles.loaderImg}
       />
+      <p className={styles.loaderText}>{title}</p>
     </div>
   )
 }
