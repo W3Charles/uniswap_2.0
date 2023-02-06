@@ -5,6 +5,7 @@ import styles from "../styles";
 
 const WalletButton = () => {
   const {ens} = useLookupAddress();
+  const {account, activateBrowserWallet, deactivate} = useEthers();
   return (
     <div>WalletButton</div>
   )
