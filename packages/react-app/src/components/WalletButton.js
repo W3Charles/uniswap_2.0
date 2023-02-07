@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import {shortenAddress, useEthers, useLookupAddress} from "@usedapp/core";
 
 import styles from "../styles";
-import { render } from 'react-dom';
 
 const WalletButton = () => {
   const [rendered, setRendered] = useState("");
@@ -24,7 +23,7 @@ const WalletButton = () => {
       {rendered === "" && "Connect Wallet"}
       {rendered !== "" && rendered}
     </button>
-  )
-}
+  );
+};
 
 export default WalletButton
