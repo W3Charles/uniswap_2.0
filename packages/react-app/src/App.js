@@ -19,7 +19,7 @@ const App = () => {
             alt="uniswap logo"
             className="w-16 h-16 object-contain"
           />
-          WalletButton
+          <WalletButton />
         </header>
         
         <div className={styles.exchangeContainer}>
