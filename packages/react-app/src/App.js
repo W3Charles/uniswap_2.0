@@ -34,9 +34,12 @@ const App = () => {
                 {account ? (
                   poolsLoading ? (
                     <Loader title="Loading pools, please wait!" />
-                  ) : <Exchange />
-                ) : <Loader title="Please connect your wallet" />}
-
+                  ) : ( 
+                    <Exchange />
+                  )
+                ) : ( 
+                  <Loader title="Please connect your wallet" />
+                )}
               </div>
               <div className="blue_gradient" />
             </div>
