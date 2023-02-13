@@ -1,6 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import ReactDOM from 'react-dom'
-
 import {shortenAddress, useEthers, useLookupAddress} from '@usedapp/core';
 
 import styles from '../styles';
