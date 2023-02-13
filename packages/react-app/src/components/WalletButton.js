@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from 'react';
+import ReactDOM from 'react-dom'
+
 import {shortenAddress, useEthers, useLookupAddress} from '@usedapp/core';
 
 import styles from '../styles';
@@ -8,6 +10,8 @@ const WalletButton = () => {
 
   const {ens} = useLookupAddress();
   const {account, activateBrowserWallet, deactivate} = useEthers();
+
+  console.log({account});
   
   return (
     <button
