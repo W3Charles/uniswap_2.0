@@ -58,6 +58,10 @@ input[type="number"] {
   );
 }
 
-/*iframe { 
+iframe { 
   pointer-events: none; 
-}*/
+}
+
+/*body > iframe {
+  pointer-events: none;
+} */
