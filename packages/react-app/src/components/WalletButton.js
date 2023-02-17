@@ -8,6 +8,10 @@ const WalletButton = () => {
 
   const {ens} = useLookupAddress();
   const {account, activateBrowserWallet, deactivate} = useEthers();
+
+  useEffect(() => {
+
+  }, [account, ens, setRendered])
   
   return (
     <button
