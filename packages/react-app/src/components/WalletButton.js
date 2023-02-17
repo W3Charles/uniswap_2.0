@@ -4,14 +4,14 @@ import {shortenAddress, useEthers, useLookupAddress} from '@usedapp/core';
 import styles from '../styles';
 
 const WalletButton = () => {
-  const [rendered, setRendered] = useState('');
+  const [accountAddress, setAccountAddress] = useState('');
 
   const {ens} = useLookupAddress();
   const {account, activateBrowserWallet, deactivate} = useEthers();
 
   useEffect(() => {
 
-  }, [account, ens, setRendered])
+  }, [account, ens, setAccountAddress])
   
   return (
     <button
@@ -24,8 +24,8 @@ const WalletButton = () => {
       }}
       className={styles.walletButton}
     >
-      {rendered === "" && "Connect Wallet"}
-      {rendered !== "" && rendered}
+      {accountAddress === "" && "Connect Wallet"}
+      {accountAddress !== "" && accountAddress}
     </button>
   );
 };
