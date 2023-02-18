@@ -10,7 +10,13 @@ const WalletButton = () => {
   const {account, activateBrowserWallet, deactivate} = useEthers();
 
   useEffect(() => {
-
+    if(ens) {
+      setAccountAddress(ens);
+    } else if(account) {
+      setAccountAddress(shortenAddress(account));
+    } else {
+      setAccountAddress('')
+    }
   }, [account, ens, setAccountAddress])
   
   return (
