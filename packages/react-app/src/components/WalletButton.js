@@ -24,8 +24,7 @@ const WalletButton = () => {
       }}
       className={styles.walletButton}
     >
-      {accountAddress === "" && "Connect Wallet"}
-      {accountAddress !== "" && accountAddress}
+      {accountAddress || "Connect Wallet"}
     </button>
   );
 };
