@@ -10,5 +10,9 @@ export const usePools = () => {
     const [loading, setLoading] = useState(true);
     const [pools, setPools] = useState({});
 
+    useEffect(() => {
+        
+      }, [readOnlyUrls, readOnlyChainId]);
+    
     return [loading, pools];
 }
