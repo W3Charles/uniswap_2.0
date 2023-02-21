@@ -4,3 +4,11 @@ import { useConfig } from '@usedapp/core';
 
 import { ROUTER_ADDRESS } from '../config';
 import { getFactoryInfo, getRouterInfo } from '../utils';
+
+export const usePools = () => {
+    const { readOnlyChainId, readOnlyUrls } = useConfig();
+    const [loading, setLoading] = useState(true);
+    const [pools, setPools] = useState({});
+
+    return [loading, pools];
+}
